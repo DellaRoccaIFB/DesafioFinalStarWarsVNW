@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    max-width: 1920px;
+}
+
+
+header {
+    width: 100%;
+}
+
+.BannerEstrelaDaMorte {
+    display: flex;
+    width: 100%;
+    height: 43.489583333333vw;
+    background-image: url("img/EstrelaDaMorteBanner.png");
+    /* background-color: lightgrey; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.KyloRen {
+    /* background-image: url("img/Kylo-Ren-banner\ sem\ fundo.png");
+    height: 500px;
+    width: 500px;
+    border: solid 3px blue; */
+}
+
+.STARheader {
+    /* height: 6.09375vw;
+    background-image: url("img/star.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: solid 3px green; */
+}
+
+.WARSheader {
+    /* width: 50%;
+    height: 100%;
+    background-image: url("img/wars.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: solid 3px red; */
+}
+
+/* MAIN */
+
+.BackGroundImageMain {
+    height: 76.145833333333vw;
+    background-image: url("img/sta\ uo\ robot.png");
+    background-repeat: no-repeat;
+}
