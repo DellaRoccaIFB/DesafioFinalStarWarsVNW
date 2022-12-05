@@ -121,6 +121,10 @@ body {
     /* border: solid 3px blue; */
 }
 
+.LinhaCinza img {
+    width: 78.23vw;
+}
+
 .AT-ATBottomSection {
     width: 100%;
     height: 42vw;
