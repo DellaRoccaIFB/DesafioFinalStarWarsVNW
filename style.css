@@ -288,6 +288,7 @@ header {
     /* height: 502px; */
     margin: 81.5px 0 0 0;
     display: flex;
+    /* flex-wrap: wrap; */
     /* overflow: hidden; */
     /* border: solid 2px blue; */
 }
@@ -360,11 +361,10 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    /* grid-area: 1 / 1 / 2 / 2; */
 }
 
 .NovosGráficos img {
-    width: 100%;
+    width: 21vw;
     max-width: 410px;
     opacity: 0;
 }
@@ -418,6 +418,8 @@ header {
     text-align: right;
 }
 
+/* Footer */
+
 .ContainerComoJogar {
     width: 100%;
     height: 15vw;
@@ -434,16 +436,16 @@ header {
     grid-area: 1 / 2 / 2 / 2 span;
     color: white;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2.0833333333333vw;
     letter-spacing: 5px;
     font-family: "Sovereign", sans-serif;
     text-align: center;
     /* border: solid 2px blue; */
 }
 
-/* Footer */
-
 #SectionSilverStormTrooperAndTresButtonFooter {
+    width: 100%;
+    height: 25vw;
     padding: 0 7.29vw 0 7.29vw;
     display: flex;
 }
@@ -452,36 +454,59 @@ header {
     margin: -25vw 0 0 0;
     width: 27.96875vw;
     max-width: 537px;
-    border: solid 3px red;
+    /* border: solid 3px red; */
 }
 
-.ContainerTresBotoes {
+.ContainerTresBotoes {    
+    margin: 4.84375vw 0 0 0;
     width: 100%;
+    max-height: 300px;
     display: flex;
     justify-content: space-around;
+    /* border: solid 2px blue; */
 }
 
 .ContainerBotao {
-    margin: 4.84375vw 0 0 0;
     width: 13.541666666667vw;
+    max-width: 260px;
     height: 13.541666666667vw;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background: #FFFFFF;
     /* border: solid 3px green; */
 }
 
-.ContainerBotao  h3 {
+.NumeroBotao {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NumeroBotao h3 {
     font-size: 2.6041666666667vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     /* border: solid 2px red; */
+    transition: all 0.5s;
+    /* border: solid 2px blue; */
+    transition: all 100ms;
+}
+
+.CaixaBlackButton {
+    width: 100%;
+    height: 3.6458333333333vw;
+    max-height: 70px;
+    /* border: solid 2px green; */
 }
 
 .ContainerBotao button {
     width: 100%;
-    height: 3.6458333333333vw;
+    height: 100%;
     border: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -490,35 +515,107 @@ header {
     background-color: black;
     text-transform: uppercase;
     letter-spacing: 3px;
-    transition: ease-in-out 1s;
     /* border: solid 2px green; */
+    transition: all 1s;
 }
 
-.ContainerBotao button:hover {
+.ContainerBotao:hover h3 {
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+.ContainerBotao:hover button {
+    /* transform: translateX(calc(100%-50%)); */
     background-color: #D74430;
     cursor: pointer;
 }
 
-.ContainerBotao p {
-    height: 25%;
+.DescricaoBotao {
+    height: 20%;
     width: 100%;
+}
+
+.DescricaoBotao p {
+    width: 100%;
+    height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.2vw;
+    transition: all 1s;
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     /* border: solid 2px blue; */
 }
 
-/* .containerQuatroImagensDireita img:hover {
-    transition: 1s;
-    background-image: url(img/Grupo\ novos\ graficos.svg);
-    background-size: cover;
-    opacity: 0.1;
-} */
+.LinhaInferiorBotao {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px red; */
 
-/* Usando esse valor de min-width pois meu monitor é 2560x1080 */
+}
+
+.LinhaInferiorBotao .a {
+        transition: all 1s;
+}
+
+.ContainerBotao:hover .LinhaInferiorBotao .a{
+    stroke: black;
+}
+
+#SectionAplicativoAndStarWars {
+    width: 63.958333333333vw;
+    max-width: 1228px;
+    height: 45.9375vw;
+    max-height: 882px;
+    padding: 0 414px 0 278px;
+    background-color: #FF5A56;
+}
+
+.ContainerAplicativo {
+    width: 100%;
+    height: 501.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.TituloAplicativo h2 {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 4px;
+    font-family: 'Sovereign', sans-serif;
+}
+
+.TextoAplicativo p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.ContainerButtonGooglePlayAndAppStore {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+
+
+/* Usando esse valor de min-width pois meu monitor é 2560x1080 e a partir de 1921px o site quebra */
 @media (min-width: 1921px) {
     .TituloEstruturaDeJogo {
         font-size: 5rem;
@@ -533,7 +630,20 @@ header {
         font-size: 50px !important;
         color: red;
     }
+    .ComoJogar {
+        font-size: 2.5rem;
+    }
     .SilverStormTrooper {
         margin: -29rem 0 0 0;
     }
+    .ContainerBotao h3 {
+        font-size: 3.125rem;
+    }
+    .ContainerBotao button {
+        font-size: 1.875rem;
+    }
+    .ContainerBotao p {
+        font-size: 1.25rem;
+    }
+
 }
