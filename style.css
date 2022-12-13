@@ -292,11 +292,6 @@ header {
     /* border: solid 2px blue; */
 }
 
-.JediPushingStormTroopers {
-    /* display: flex; */
-    /* border: solid 2px blue; */
-}
-
 .JediPushingStormTroopers img {
     width: 42.92vw;
     max-width: 824px;
@@ -450,16 +445,71 @@ header {
 
 #SectionSilverStormTrooperAndTresButtonFooter {
     padding: 0 7.29vw 0 7.29vw;
+    display: flex;
 }
 
 .SilverStormTrooper {
     margin: -25vw 0 0 0;
     width: 27.96875vw;
     max-width: 537px;
-    /* border: solid 3px red; */
+    border: solid 3px red;
 }
 
+.ContainerTresBotoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
+.ContainerBotao {
+    margin: 4.84375vw 0 0 0;
+    width: 13.541666666667vw;
+    height: 13.541666666667vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: solid 3px green; */
+}
+
+.ContainerBotao  h3 {
+    font-size: 2.6041666666667vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    /* border: solid 2px red; */
+}
+
+.ContainerBotao button {
+    width: 100%;
+    height: 3.6458333333333vw;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5625vw;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: ease-in-out 1s;
+    /* border: solid 2px green; */
+}
+
+.ContainerBotao button:hover {
+    background-color: #D74430;
+    cursor: pointer;
+}
+
+.ContainerBotao p {
+    height: 25%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* border: solid 2px blue; */
+}
 
 /* .containerQuatroImagensDireita img:hover {
     transition: 1s;
