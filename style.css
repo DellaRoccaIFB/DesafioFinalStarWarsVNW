@@ -21,13 +21,9 @@ body {
     margin: auto;
 }
 
-header {
-    max-width: 1920px;
-}
-
 #ContainerHeader {
     width: 100%;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     height: 43.49vw;
     max-height: 835px;
     background-image: url("/img/BannerStarWarsHeader.png");
@@ -42,10 +38,6 @@ header {
 
 .KyloRen {
     grid-area: 1 / 4 / 28 / 29;
-    /* border: solid 2px red;     */
-    /* display: grid; */
-    /* grid-template-columns: repeat(5, 1fr); */
-    /* grid-template-rows: repeat(6, 1fr); */
     z-index: 2;
 }
 
@@ -56,7 +48,6 @@ header {
 
 .StarHeader {
     grid-area: 23 / 6 / 24 / 29;
-    /* border: solid 2px blue; */
     z-index: 1;
 }
 
@@ -67,7 +58,6 @@ header {
 
 .WarsHeader {
     grid-area: 23 / 19 / 24 / 29 ;
-    /* border: solid 3px green; */
 }
 
 .WarsHeader img {
@@ -77,7 +67,6 @@ header {
 
 .CrieSuaLegiao {
     grid-area: 26 / 22 / 27 / 29 ;
-    /* border: solid 3px orange; */
     z-index: 2;    
     transition: 1s;
 }
@@ -109,32 +98,69 @@ header {
     display: grid;
     grid-template-columns: repeat(24 ,1fr);
     grid-template-rows: repeat(12 ,1fr);
-    /* border: solid 3px yellow; */
 }
 
 .ComeceAJogar {
-    margin: -2.5vw 0 0 0;
-    z-index: 2;
-    /* border: solid 3px blue; */
-    grid-area: 1 / 5 / 2 / 25;
-}
-
-.ComeceAJogar img {
     width: 20.729vw;
     max-width: 398px;
-    transition: 1s;
+    height: 30.416666666667vw;
+    max-height: 584px;
+    background-image: url(/img/StormTrooperRer@2x.png);
+    background-size: contain;
+    margin: -2.5vw 0 0 0;
+    z-index: 2;
+    grid-area: 1 / 5 / 2 / 25;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* transition: all 1s; */
 }
 
-.ComeceAJogar img:hover {
-    transition: 1s;
-    transform: scale(1.03);
-    cursor: pointer;
+.ComeceAJogar h2 {
+    width: 100%;
+    height: 136px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 3.0em;
+    color: white;
+    letter-spacing: 2px;
+    /* border: solid 3px currentColor; */
+}
+
+.ComeceAJogar p {
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    padding: 0 1.69vw 0 1.69vw;
+}
+
+.ComeceAJogar button {
+    width: 200px;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    color: #FFFFFF;
+    background: none;
+    border:solid 2px #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;    
+    background: -webkit-linear-gradient(180deg,transparent 50%, #000000 50%);
+    background-size: 400px 80px;
+    transition: all 500ms;
+}
+
+.ComeceAJogar button:hover{
+    font-size: 1.5em;
+    background-position: 200px 0px;
 }
 
 .SobreOJogo {
     margin: -13.2vw 0 0 0;
     grid-area: 2 / 11 / 13 / 24;
-    /* border: solid 3px red; */
     justify-self: end;
 }
 
@@ -145,7 +171,6 @@ header {
 
 .LinhaCinza {
     grid-area: 12 / 5 / 13 / 24;
-    /* border: solid 3px blue; */
 }
 
 .LinhaCinza img {
@@ -160,25 +185,21 @@ header {
     display: grid;
     grid-template-columns: repeat(30 ,1fr);
     grid-template-rows: repeat(30 ,1fr);
-    /* border: solid 3px red; */
 }
 
 .LordSifh {
     grid-area: 2 / 5 / 31 / 31;
-    /* border: solid 3px blue; */
 }
 
 .LordSifh img {
     width: 44.063vw;
     max-width: 846px;
-    /* background-color: lightcoral; */
 }
 
 .EstruturaDeJogo {
     width: 26.92vw;
     max-width: 517px;
     grid-area: 4 / 14 / 31 / 31;
-    /* border: solid 2px red; */
 }
 
 .ContainerListaEstruturaDeJogo {
@@ -189,7 +210,6 @@ header {
 .TituloEstruturaDeJogo {
     font-size: 4vw;
     width: 100%;
-    /* border: solid 3px green; */
 }
 
 .TituloEstruturaDeJogo,
@@ -199,7 +219,6 @@ header {
     text-transform: uppercase;
     text-align: end;
     font-weight: normal;
-    /* color: black; */
 }
 
 .JOGONegrito {
@@ -207,7 +226,6 @@ header {
     font-weight: 800;
     letter-spacing: -3px;
     text-transform: uppercase;
-    /* color: red; */
 }
 
 .ulEstruturaDeJogo {
@@ -218,7 +236,6 @@ header {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-evenly;
-    /* border: solid 2px blue; */
 }
 
 .liEstruturaDeJogo {
@@ -226,13 +243,11 @@ header {
     display: flex;
     text-align: end;
     justify-content: end;
-    /* border: solid 2px green; */
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 1.7vw;
-    /* font-size: 1.5rem !important; */
     transition: 0.8s;
 }
 
@@ -246,12 +261,10 @@ header {
 .EstruturaDeJogo img {
     width: 26.927vw;
     max-width: 517px;
-    /* background-color: black; */
 }
 
 .Rey {
     grid-area: 6 / 23 / 31 / 31;
-    /* border: solid 3px green; */
 }
 
 .Rey img {
@@ -279,7 +292,6 @@ header {
     font-weight: 800;
     font-size: 2.6041666666667vw;
     color: white;
-    /* border: solid 2px red; */
 }
 
 #ContainerCincoImagensAtributos {
@@ -288,9 +300,6 @@ header {
     /* height: 502px; */
     margin: 81.5px 0 0 0;
     display: flex;
-    /* flex-wrap: wrap; */
-    /* overflow: hidden; */
-    /* border: solid 2px blue; */
 }
 
 .JediPushingStormTroopers img {
@@ -305,7 +314,6 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    /* border: solid 2px red; */
 }
 
 .containerQuatroImagensDireita div img {
@@ -316,11 +324,9 @@ header {
 .MachineGunStormTrooper {
     position: relative;
     grid-area: 1 / 1 / 2 / 2;
-    /* border: solid 2px red; */
 }
 
 .MachineGunStormTrooper img {
-    /* width: 50% !important; */
     width: 21vw;
     max-width: 410px;
 }
@@ -328,7 +334,6 @@ header {
 .Guerra {
     position: relative;
     grid-area: 1 / 2 / 2 / 3;
-    /* border: solid 2px blue; */
 }
 
 .Guerra img {
@@ -339,7 +344,6 @@ header {
 .StarShipsFight {
     position: relative;
     grid-area: 2 / 1 / 3 / 2;
-    /* border: solid 2px blue; */
 }
 
 .StarShipsFight img {
@@ -380,15 +384,12 @@ header {
     height: 70vw;
     max-height: 1300px;
     padding: 0 140px 0 140px;
-    /* border: solid 3px green; */
 }
 
 .Hierarquia {
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     align-items: flex-start;
-    /* border: solid 3px red; */
 }
 
 .Hierarquia img {
@@ -402,7 +403,6 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
-    /* border: solid 3px blue; */
 }
 
 .EmNormasEspeciais {
@@ -428,7 +428,6 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    /* border: solid 3px red; */
     background-color: #2D2D2D;
 }
 
@@ -445,10 +444,11 @@ header {
 
 #SectionSilverStormTrooperAndTresButtonFooter {
     width: 100%;
-    height: 25vw;
-    max-height: 480px;
+    height: 30.1vw;
+    max-height: 578px;
     padding: 0 7.29vw 0 7.29vw;
     display: flex;
+    /* border: solid 3px red; */
 }
 
 .SilverStormTrooper {
@@ -492,10 +492,7 @@ header {
     font-size: 2.6041666666667vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    /* border: solid 2px red; */
-    transition: all 0.5s;
-    /* border: solid 2px blue; */
-    transition: all 100ms;
+    transition: all 1s;
 }
 
 .CaixaBlackButton {
@@ -517,7 +514,16 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px;
     /* border: solid 2px green; */
+    background-color: #000000;
+    background: -webkit-linear-gradient(180deg, #000000 50%, #D74430 50%);
+    background-size: 520px 70px;
     transition: all 1s;
+}
+
+.ContainerBotao:hover button {
+    background-position: 260px 0;
+    /* background-color: #D74430; */
+    cursor: pointer;
 }
 
 .ContainerBotao:hover h3 {
@@ -530,12 +536,6 @@ header {
     -moz-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
-    cursor: pointer;
-}
-
-.ContainerBotao:hover button {
-    /* transform: translateX(calc(100%-50%)); */
-    background-color: #D74430;
     cursor: pointer;
 }
 
@@ -576,23 +576,22 @@ header {
     stroke: black;
 }
 
-#SectionAplicativoAndStarWars {
+#SectionAplicativoAndStarWarsAndDarthVader {
+    position: relative;
     width: 62%;
     max-width: 1228px;
     height: 50.9375vw;
-    max-height: 930px;
+    max-height: 882px;
     padding: 0 21.5625vw 0 14.479166666667vw;
     background-color: #FF5A56;
-    display: flex;
-    flex-direction: column;
-    /* border: solid 2px blue; */
+    /* border: solid 2px black; */
 }
 
 #ContainerAplicativo {
     width: 27.942708333333vw;
     max-width: 536.5px;
     height: 26.119791666667vw;
-    max-height: 501.5px;
+    max-height: 451.5px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -629,16 +628,14 @@ header {
     transform: scale(1.03);
 }
 
-
-
 .ContainerStarWarsFooter {
     width: 27.942708333333vw;
     max-width: 536.5px;
     height: 19.7vw;
-    max-height: 380px;
+    max-height: 380.5px;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     /* border: solid 2px blue; */
 }
@@ -666,21 +663,45 @@ header {
 }
 
 #SectionDarthVaderFooter {
-    display: flex;
-    border: solid 2px blue;
+    position: absolute;
+    bottom: 5%;
+    right: -47%;
 }
 
-.DarthVaderImage {
-    display: flex;
+.ContainerDarthVaderImage {
+    position: relative;
+    /* border: solid 2px blue; */
 }
 
-.DarthVaderImage  img{
+.ContainerDarthVaderImage img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
     width: 39.375vw;
     max-width: 756px;
+    grid-area: 30 / 30 / 31 / 31 ;
+    /* border: solid 3px green; */
+}
+
+.LayoutVaiNaWeb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    /* border: solid 3px red; */
+}
+
+.LayoutVaiNaWeb a {
+    color: black;
 }
 
 /* Usando esse valor de min-width pois meu monitor é 2560x1080 e a partir de 1921px o site quebra */
 @media (min-width: 1921px) {
+    #ContainerHeader {
+        background-size: auto;
+    }
     .TituloEstruturaDeJogo {
         font-size: 5rem;
     }
@@ -692,7 +713,6 @@ header {
     }
     .TituloAtributos {
         font-size: 50px !important;
-        color: red;
     }
     .ComoJogar {
         font-size: 2.5rem;
@@ -711,3 +731,7 @@ header {
     }
 
 }
+
+/* @media (min-width: 1921px) {
+
+} */
