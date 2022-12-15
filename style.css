@@ -804,7 +804,7 @@ body {
     }
     #AT-ATMain {
         height: fit-content;
-        background-image: url(img/sta\ uo\ robot@2x.png);        
+        background-image: url(./img/sta\ uo\ robot@2x.png);        
         background-size: 75vw 135vw;
         background-repeat: no-repeat;
         display: flex;
