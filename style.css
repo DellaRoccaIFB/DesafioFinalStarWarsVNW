@@ -23,7 +23,6 @@ body {
 
 #ContainerHeader {
     width: 100%;
-    /* max-width: 1920px; */
     height: 43.49vw;
     max-height: 835px;
     background-image: url("/img/BannerStarWarsHeader.png");
@@ -82,8 +81,6 @@ body {
     cursor: pointer;
 }
 
-/* ATÉ AQUI OK */
-
 #AT-ATMain {
     width: 100%;
     height: 76.146vw;
@@ -109,6 +106,7 @@ body {
     max-height: 584px;
     background-image: url(/img/StormTrooperRer@2x.png);
     background-size: contain;
+    background-repeat: no-repeat;
     margin: -2.5vw 0 0 0;
     z-index: 2;
     grid-area: 1 / 5 / 2 / 25;
@@ -116,7 +114,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* transition: all 1s; */
 }
 
 .ComeceAJogar h2 {
@@ -125,15 +122,14 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     text-align: center;
-    font-size: 3.0em;
+    font-size: 2.6041666666667vw;
     color: white;
     letter-spacing: 2px;
-    /* border: solid 3px currentColor; */
 }
 
 .ComeceAJogar p {
     color: white;
-    font-size: 1.25em;
+    font-size: 1.041vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     text-align: justify;
@@ -141,10 +137,10 @@ body {
 }
 
 .ComeceAJogar button {
-    width: 200px;
-    height: 50px;
+    width: 10.416666666667vw;
+    height: 2.6041666666667vw;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.041vw;
     color: #FFFFFF;
     background: none;
     border:solid 2px #FFFFFF;
@@ -163,12 +159,39 @@ body {
 .SobreOJogo {
     margin: -13.2vw 0 0 0;
     grid-area: 2 / 11 / 13 / 24;
-    justify-self: end;
-}
-
-.SobreOJogo img {
+    justify-self: end;    
     width: 49.479vw;
     max-width: 950px;
+    height: 12.96875vw;
+    max-height: 249px;
+    display: flex;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.SobreOJogo h2 {
+    font-size: 1.5625vw;
+    font-weight: 700;
+}
+
+.SobreOJogo h2::after {
+    content: "";
+    margin: 0.78125vw 0;
+    margin-left: auto;
+    width: 9.1145833333333vw;
+    height: 0.15625vw;
+    display: block;
+    background-color: #000000;
+}
+     
+.sobreJogoDescricao p {
+    font-size: 1.0416666666667vw;
+    line-height: 1.5vw;
+}
+
+.ContainerStarWarsGame img{
+    width: 20.729166666667vw;
+    max-width: 398px;
 }
 
 .LinhaCinza {
@@ -274,8 +297,6 @@ body {
     max-width: 398px;
 }
 
-/* 11/12/2022 proxima section */
-
 #grayBackGround {
     width: 100%;
     background-color: rgb(45, 45, 45);
@@ -285,8 +306,7 @@ body {
     width: 100%;
     height: 50vw;
     max-height: 960px;
-    padding: 9.23vw 140px 0 140px;
-    background-size: cover;
+    padding: 9.23vw 7.29vw 0 7.29vw;
 }
 
 .TituloAtributos {
@@ -299,7 +319,6 @@ body {
 #ContainerCincoImagensAtributos {
     width: 100%;
     max-width: 1640px;
-    /* height: 502px; */
     margin: 81.5px 0 0 0;
     display: flex;
 }
@@ -321,7 +340,6 @@ body {
 .containerQuatroImagensDireita div img {
     transition: all 1s;
 }
-
 
 .MachineGunStormTrooper {
     position: relative;
@@ -366,26 +384,81 @@ body {
 .NovosGráficos {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; 
+    width: 100%;   
+    height: 100%;
+    padding: 18px 18px 18px 18px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(164, 61, 47, 0.7);
+    transition: all 1s;
 }
 
-.NovosGráficos img {
-    width: 21vw;
-    max-width: 410px;
-    opacity: 1;
+.linetop {
+    position: absolute;
+    top: 0.5vw;
+    left: 0.5vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
 }
 
-.NovosGráficos img:hover {
+.linebottom {
+    position: absolute;
+    bottom: 0.5vw;
+    right: 0.5vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.NovosGráficos h2{
+    font-size: 1.4vw;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.NovosGráficos p {
+    font-size: 0.9vw;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.NovosGráficos button {
+    width: 9.0625vw;
+    max-width: 174px;
+    height: 2.6041666666667vw;
+    max-height: 50px;
+    border: solid 2px white;
+    background: none;
+    color: #FFFFFF;
+    font-size: 1vw;
+    transition: all 1s;
+}
+
+.NovosGráficos button:hover {
+    scale: 1.1;
+    background: white;
+    color: #000000;
     cursor: pointer;
+}
+
+.NovosGráficos:hover {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 #SectionHierarquia {
     width: 100%;
     height: 70vw;
     max-height: 1300px;
-    padding: 0 140px 0 140px;
+    padding: 0 7.2916666666667vw 0 7.2916666666667vw;
 }
 
 .Hierarquia {
@@ -402,6 +475,7 @@ body {
 .ContainerEmNormasEspeciais {
     margin: 1.5vw 0 0 0;
     width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -410,17 +484,15 @@ body {
 .EmNormasEspeciais {
     width: 60vw;
     color: white;
-    font-size: 20px;
+    font-size: 1.04vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    line-height: 2rem;
+    line-height: 2vw;
     text-align: right;
 }
-
-/* Footer */
 
 .ContainerComoJogar {
     width: 100%;
@@ -428,20 +500,19 @@ body {
     max-height: 288px;
     margin: -2px 0 0 0; /* Margin só para retirar linha branca que fica entre as divisões da seções*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     background-color: #2D2D2D;
 }
 
 .ComoJogar {
-    grid-area: 1 / 2 / 2 / 2 span;
+    grid-area: 1 / 2 / 2 / 5 span;
     color: white;
     text-transform: uppercase;
     font-size: 2.0833333333333vw;
     letter-spacing: 5px;
     font-family: "Sovereign", sans-serif;
     text-align: center;
-    /* border: solid 2px blue; */
 }
 
 #SectionSilverStormTrooperAndTresButtonFooter {
@@ -450,14 +521,12 @@ body {
     max-height: 578px;
     padding: 0 7.29vw 0 7.29vw;
     display: flex;
-    /* border: solid 3px red; */
 }
 
 .SilverStormTrooper {
     margin: -25vw 0 0 0;
     width: 27.96875vw;
     max-width: 537px;
-    /* border: solid 3px red; */
 }
 
 .ContainerTresBotoes {    
@@ -466,7 +535,6 @@ body {
     max-height: 300px;
     display: flex;
     justify-content: space-around;
-    /* border: solid 2px blue; */
 }
 
 .ContainerBotao {
@@ -479,7 +547,6 @@ body {
     align-items: center;
     justify-content: space-between;
     background: #FFFFFF;
-    /* border: solid 3px green; */
 }
 
 .NumeroBotao {
@@ -501,7 +568,6 @@ body {
     width: 100%;
     height: 3.6458333333333vw;
     max-height: 70px;
-    /* border: solid 2px green; */
 }
 
 .ContainerBotao button {
@@ -515,8 +581,6 @@ body {
     background-color: black;
     text-transform: uppercase;
     letter-spacing: 3px;
-    /* border: solid 2px green; */
-    background-color: #000000;
     background: -webkit-linear-gradient(180deg, #000000 50%, #D74430 50%);
     background-size: 520px 70px;
     transition: all 1s;
@@ -524,8 +588,6 @@ body {
 
 .ContainerBotao:hover button {
     background-position: 260px 0;
-    /* background-color: #D74430; */
-    cursor: pointer;
 }
 
 .ContainerBotao:hover h3 {
@@ -557,17 +619,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: solid 2px blue; */
 }
-
 .LinhaInferiorBotao {
     height: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: solid 2px red; */
-
 }
 
 .LinhaInferiorBotao .a {
@@ -586,9 +644,7 @@ body {
     max-height: 882px;
     padding: 0 21.5625vw 0 14.479166666667vw;
     background-color: #FF5A56;
-    /* border: solid 2px black; */
 }
-
 #ContainerAplicativo {
     width: 27.942708333333vw;
     max-width: 536.5px;
@@ -598,11 +654,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    /* border: solid 2px green; */
 }
-
 .TituloAplicativo h2 {
-    font-size: 3.125em;
+    font-size: 2.6041666666667vw;
     color: white;
     letter-spacing: 4px;
     font-family: 'Sovereign', sans-serif;
@@ -611,7 +665,7 @@ body {
 .TextoAplicativo p {
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
-    font-size: 1em;
+    font-size: 1vw;
     color: white;
 }
 
@@ -623,11 +677,6 @@ body {
 .ContainerButtonGooglePlayAndAppStore img {
     width: 13.542vw;
     max-width: 248px;
-    transition: all 1s;
-}
-
-.ContainerButtonGooglePlayAndAppStore img:hover {
-    transform: scale(1.03);
 }
 
 .ContainerStarWarsFooter {
@@ -639,12 +688,10 @@ body {
     align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
-    /* border: solid 2px blue; */
 }
 
 .LinhaVermelha {
     width: 100%;
-    /* border: solid 2px black; */
 }
 
 .LinhaVermelha svg {
@@ -658,7 +705,7 @@ body {
 
 .DescricaoStarWars {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 1.25em;
+    font-size: 1vw;
     line-height: 30px;
     color: white;
     font-weight: 300;
@@ -672,7 +719,6 @@ body {
 
 .ContainerDarthVaderImage {
     position: relative;
-    /* border: solid 2px blue; */
 }
 
 .ContainerDarthVaderImage img{
@@ -681,18 +727,15 @@ body {
     bottom: 0;
     width: 39.375vw;
     max-width: 756px;
-    grid-area: 30 / 30 / 31 / 31 ;
-    /* border: solid 3px green; */
 }
 
 .LayoutVaiNaWeb {
     position: absolute;
     right: 0;
     bottom: 0;
-    font-size: 1em;
+    font-size: 1vw;
     font-family: 'Open Sans', sans-serif;
     color: black;
-    /* border: solid 3px red; */
 }
 
 .LayoutVaiNaWeb a {
@@ -702,7 +745,16 @@ body {
 /* Usando esse valor de min-width pois meu monitor é 2560x1080 e a partir de 1921px o site quebra */
 @media (min-width: 1921px) {
     #ContainerHeader {
-        background-size: auto;
+        background-size: 100%;
+    }
+    .SobreOJogo {
+        margin: -253.44px 0 0 0;
+    }
+    .SobreOJogo h2 {
+        font-size: 1.875em;
+    }
+    .sobreJogoDescricao p {
+        font-size: 1.25em;
     }
     .TituloEstruturaDeJogo {
         font-size: 5rem;
@@ -710,7 +762,7 @@ body {
     .liEstruturaDeJogo {
         font-size: 2rem;
     }
-    .SectionAtributos{
+    #SectionAtributos{
         padding: 178.5px 140px 0 140px;
     }
     .TituloAtributos {
@@ -731,15 +783,18 @@ body {
     .ContainerBotao p {
         font-size: 1.25rem;
     }
+    .ComeceAJogar button {
+        width: 200px;
+        height: 50px;
+    }
 
 }
 
-@media (min-width: 201px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 500px) {
 
     body {
         max-width: 500px;
         margin: 0;
-        /* padding: 0 9.8666666666667vw 0 9.8666666666667vw; */
     }
     .CrieSuaLegiao img {
         width: 14.133333333333vw;
@@ -748,45 +803,260 @@ body {
         max-height: 58px;
     }
     #AT-ATMain {
-        height: 237.33333333333vw;
-        max-height: 890px;
+        height: fit-content;
         background-image: url(img/sta\ uo\ robot@2x.png);        
-        background-size: contain ;
+        background-size: 75vw 135vw;
         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        row-gap: 6vw;
     }
     .AT-ATTopSection {
         width: 100%;
-        height: 100%;
-        /* height: 134.66666666667vw; */
-        max-height: 505px;
-
+        height: fit-content;
+        max-height: none;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding: 0 9.8666666666667vw 0 9.8666666666667vw;
+        padding: 0 10.4vw 0 9.8666666666667vw;
     }
     .ComeceAJogar{
-        margin: 10vw 0 0 0;
+        margin: 14.666666666667vw 0 0 0;
         width: 59.2vw;
-        max-width: 222px;
-        height: 87.47vw;
-        max-height: 328px;
-        padding: 0 6.27vw 0 6.27vw;
+        height: 88vw;
+        max-height: none;
+        padding: 0 4vw 0 4vw;
+        background-size: cover;
+        background-position: top;
+        justify-content: space-around;
     }
     .ComeceAJogar h2 {
-        font-size: 1.5rem;
+        font-size: 7.47vw;
     }
     .ComeceAJogar p {
-        font-size: 0.875rem;
-        line-height: 17px;
+        font-size: 4vw;
+        line-height: 20px;
     }
     .ComeceAJogar button {
-        font-size: 1rem;
+        font-size: 4.27vw;
         width: 30.4vw;
         height: 7.4666666666667vw;
     }
-
     .ComeceAJogar button:hover {
         font-size: 1.08rem;
+    }
+    .SobreOJogo {
+        margin: 4.27vw 0 0 0;
+        width: 100%;
+        height: 83.2vw;
+        max-height: 312px;
+        flex-direction: column;
+        z-index: 2;
+        justify-content: space-between;
+    }
+    .SobreOJogo h2 {
+        font-size: 15px;
+    }
+    .SobreOJogo h2::after {
+        width: 40vw;
+        height: 0.7vw;
+    }
+    .SobreOJogo p {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: justify;
+    }
+    .ContainerStarWarsGame {
+        order: -1;
+    }
+    .SobreOJogo img {
+        width: 59.2vw;
+        max-width: 222px;
+    }
+    .SobreOJogo::after {
+        content:' ';
+        width: 100%;
+        height: 1vw;
+        display: block;
+        background: gray;
+        border: solid 2px gray;
+    }
+    .LinhaCinza img {
+        display: none;
+    }
+    .LordSifh {
+        grid-area: 7 / 1 / 31 / 31;
+    }
+    .EstruturaDeJogo {
+        width: 45vw;
+        grid-area: 2 / 9 / 31 / 31;
+    }
+    .JOGONegrito {
+        letter-spacing: 0;
+    }
+    .liEstruturaDeJogo {
+        font-size: 2.5vw;
+    }
+    #SectionAtributos {
+        height: fit-content;
+        max-height: none;
+        padding: 0 10vw 0 10vw;
+    }
+    .ContainerTituloAtributos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 0 3vw 0;
+        height: 20vw;
+    }
+    .TituloAtributos {
+        font-size: 3.5vw;
+    }
+    #ContainerCincoImagensAtributos {
+        width: 100%;
+        height: fit-content;
+        max-height: none;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .JediPushingStormTroopers,
+    .containerQuatroImagensDireita {
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        max-width: none;
+    }
+    .JediPushingStormTroopers img,
+    .containerQuatroImagensDireita img {
+        width: 100%;
+    }
+    .containerQuatroImagensDireita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .NovosGráficos h2 {
+        font-size: 5vw;
+    }
+    .NovosGráficos p {
+        font-size: 3.5vw;
+    }
+    .NovosGráficos button {
+        width: 137px;
+        height: 36px;
+        font-size: 4vw;
+    }
+    #SectionHierarquia {
+        height: fit-content;
+        padding: 0;
+    }
+    .ContainerEmNormasEspeciais {
+        padding: 0 10vw 0 0;
+    }
+    .EmNormasEspeciais {
+        font-size: 2.5vw;
+        line-height: 2.7vw;
+    }
+    .ComoJogar {
+        grid-area: 3 / 4 / 4 / 3 span;
+        letter-spacing: 1px;
+    }
+    #SectionSilverStormTrooperAndTresButtonFooter {
+        position: relative;
+        flex-direction: row;
+        height: 160vw;
+    }
+    .ContainerSilverStormTrooper {
+        position: absolute;
+        bottom: 0;
+        left: -45%;
+        /* border: solid 2px blue; */
+    }
+    .SilverStormTrooper{
+        width: 100.8vw;
+    }
+    .ContainerTresBotoes {
+        height: 100%;
+        max-height: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .ContainerBotao {
+        width: 45vw;
+        height: 40vw;
+        justify-content: space-evenly;
+    }
+    .ContainerBotao h3 {
+        font-size: 7vw;
+    }
+    .ContainerBotao button {
+        height: 10vw;
+        font-size: 3vw;
+    }
+    .ContainerBotao p {
+        height: 18vw;
+        font-size: 3.5vw;
+    }
+    #SectionAplicativoAndStarWarsAndDarthVader {
+        position: relative;
+        width: 100%;
+        height: 180vw;
+        display: flex;
+        justify-content: center;
+        padding: 0 14vw 0 14vw;
+    }
+    #ContainerAplicativo {
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+    }
+    .TituloAplicativo h2 {
+        height: 20vw;
+        font-size: 13vw;
+        text-align: center;
+    }
+    .TextoAplicativo p {
+        font-size: 4vw;
+        line-height: 6vw;
+        height: 30vw;
+    }
+    .ContainerButtonGooglePlayAndAppStore img {
+        width: 40vw;
+    }
+    .ContainerStarWarsFooter {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    }
+    .StarWarsImage{
+        height: 25vw;
+        display: flex;
+        align-items: center;
+    }
+    .StarWarsImage img {
+        width: 30vw;
+    }
+    .DescricaoStarWars {
+        position: relative;
+    }
+    .DescricaoStarWars p {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+    #SectionDarthVaderFooter {
+        position: static;
+        bottom: none;
+        left: none;
+        width: 150vw;
+        height: 220vw;
+        display: flex;
+        background: #FFFFFF;
+    }
+    .ContainerDarthVaderImage img {
+        width: 80.533333333333vw;
     }
 }
